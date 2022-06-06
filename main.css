@@ -16,8 +16,8 @@
 .profile-card {
   position: relative;
   width: 350px;
-  /* height: 190px; */
-  height: 450px;
+  height: 190px;
+  /* height: 450px; */
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
@@ -63,4 +63,76 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  overflow: hidden;
+}
+
+.details {
+  padding: 35px;
+  /* padding-bottom: 15px; */
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(150px);
+}
+
+.profile-card:hover .details {
+  transform: translateY(0px);
+}
+
+.textDetails1 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+}
+
+.textDetails2 {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #555;
+  opacity: 0.6;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  margin-bottom: 30px;
+}
+
+.data h3 {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+  flex: 1;
+}
+
+.textDetails3 {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.actionBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionBtn button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  background: #a527c3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.actionBtn button:nth-child(2) {
+  padding: 10px 25px;
+  border: 1px solid #999;
+  color: #999;
+  background: #fff;
 }
